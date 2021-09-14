@@ -1,0 +1,269 @@
+%% LaTeX-Beamer template for KIT design
+%% by Erik Burger, Christian Hammer
+%% title picture by Klaus Krogmann
+%%
+%% version 2.1
+%%
+%% mostly compatible to KIT corporate design v2.0
+%% http://intranet.kit.edu/gestaltungsrichtlinien.php
+%%
+%% Problems, bugs and comments to
+%% burger@kit.edu
+
+\documentclass[18pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+%% SLIDE FORMAT
+
+% use 'beamerthemekit' for standard 4:3 ratio
+% for widescreen slides (16:9), use 'beamerthemekitwide'
+
+\usepackage{templates/beamerthemekit}
+% \usepackage{templates/beamerthemekitwide}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\sisetup{range-units = single, range-phrase = {-}, separate-uncertainty = true,multi-part-units=brackets, product-units=brackets, locale=US, detect-weight=true, binary-units=true}
+\usepackage{color}
+\usepackage{todonotes}
+\presetkeys{todonotes}{inline}{}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{parnotes}
+\usepackage{xspace}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{caption}
+\captionsetup{font=scriptsize,labelfont=scriptsize}
+\usepackage{upgreek}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+
+\usepackage{chngcntr}
+
+\usepackage{xcolor,colortbl}
+
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\setbeamertemplate{caption}[numbered]
+\setbeamercovered{invisible}
+% settings for making the table of contents less ugly
+\setbeamertemplate{section in toc}{\inserttocsectionnumber\ \ ~\inserttocsection}
+\setbeamertemplate{subsection in toc}{\qquad\inserttocsectionnumber.\inserttocsubsectionnumber\ \ ~\inserttocsubsection\\ }
+
+% bibliography
+%\usepackage[style=numeric, backend=biber, sorting=ynt]{biblatex}
+%\addbibresource{bibliography.bib}
+\beamertemplatenavigationsymbolsempty
+%% TITLE PICTURE
+
+% if a custom picture is to be used on the title page, copy it into the 'logos'
+% directory, in the line below, replace 'mypicture' with the 
+% filename (without extension) and uncomment the following line
+% (picture proportions: 63 : 20 for standard, 169 : 40 for wide
+% *.eps format if you use latex+dvips+ps2pdf, 
+% *.jpg/*.png/*.pdf if you use pdflatex)
+
+\titleimage{Karlsruher_Schloss_Front_Panorama}
+
+
+%% TITLE LOGO
+
+% for a custom logo on the front page, copy your file into the 'logos'
+% directory, insert the filename in the line below and uncomment it
+
+% \titlelogo{dfg_logo_foerderung/dfg_logo_schriftzug_blau_foerderung_4c}
+\titlelogo{nologo}
+\addtitlelogo{DCMS_Logo_copy}
+
+% (*.eps format if you use latex+dvips+ps2pdf,
+% *.jpg/*.png/*.pdf if you use pdflatex)
+
+%% TikZ INTEGRATION
+
+% use these packages for PCM symbols and UML classes
+% \usepackage{templates/tikzkit}
+% \usepackage{templates/tikzuml}
+
+% Define KIT Colors
+\definecolor{KIT-Gruen}{RGB}{0,150,130}
+\definecolor{KIT-Blau}{RGB}{70,100,170}
+\definecolor{KIT-MaiGruen}{RGB}{140,182,60}
+\definecolor{KIT-Gelb}{RGB}{252,229,0}
+\definecolor{KIT-Orange}{RGB}{223,155,27}
+\definecolor{KIT-Braun}{RGB}{167,130,46}
+\definecolor{KIT-Rot}{RGB}{162,34,35}
+\definecolor{KIT-Lila}{RGB}{163,16,124}
+\definecolor{KIT-Cyan-Blau}{RGB}{35,161,224}
+
+%\newcommand{\ttbarH}{bla}
+\input{declarations.tex}
+
+\newcommand{\pathToPlots}{plots}
+\newcommand{\pathToTables}{tables}
+
+\newcommand{\nametag}[2]{\href{#1}{\footnotesize[\textcolor{blue}{#2}]}}
+\selectlanguage{english}
+% the presentation starts here
+
+\title[Current Status]{Current Status
+}
+%\subtitle{FSP CMS Workshop, University of Hamburg 2018}
+% \author[Philip~Keicher]{K.~El~Morabit, U.~Husemann, M.~Horzela \textbf{P.~Keicher}, P.~Krämer, J.~Schindler, M.~Schröder, J.~van~der~Linden, M.~Waßmer, S.~Wieland}
+\author[Max~Erhart]{Max~Erhart}
+
+\iflanguage{english}{\institute{Institute of Experimental Particle Physics~(ETP)}}{\institute{Institut für Experimentelle Teilchenphysik~(ETP)}}
+\date{\today}
+
+\begin{document}
+
+% change the following line to "ngerman" for German style date and logos
+%\selectlanguage{ngerman}
+\selectlanguage{english}
+
+
+%title page
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section*{Outline}
+%\subsection*{Outline}
+\begin{frame}[label={outline}]
+	\frametitle{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Samples}
+% \begin{frame}
+% \centering
+% \textbf{\huge{Samples}}
+% \end{frame}
+
+\begin{frame}{Samples}
+    \input{tables/samples.tex}
+\end{frame}
+\section{Triggers}
+
+\subsection{Single lepton triggers}
+\begin{frame}{Single lepton triggers}
+	\input{tables/singleLepTriggers.tex}
+\end{frame}
+
+\begin{frame}{Single lepton triggers}
+	\begin{itemize}
+		\item Trigger SFs avalible for RunIISummer20UL18
+		\begin{itemize}
+			\item Should also be applicable to RunIISummer19UL18
+		\end{itemize}
+		\item Potential loss of events in low \pT region
+		\item Recovery of dilepton events failing dilepton triggers
+	\end{itemize}
+	\input{tables/lepChannelForSingleLepTriggers.tex}
+\end{frame}
+
+\subsection{Dilepton triggers}
+\begin{frame}{Dilepton triggers as suggested by TOP PAG}
+	\begin{itemize}
+		\item Lowest unprescaled triggers as suggested by TOP PAG\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMS/TopTriggerYear2018}}
+		\item Trigger SFs not publically avalible (or not found)
+	\end{itemize}
+	\input{tables/dilepTriggerSuggestions.tex}
+\end{frame}
+
+\begin{frame}{Dilepton triggers used in recent TTTo2L2Nu analysis\footnote{\url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/TOP20009}}}
+	\begin{itemize}
+		\item Additional use of single leptron double lepton
+		\item Recovery of double lepton events failing double lepton triggers
+		\item Trigger SF not publically avalible
+	\end{itemize}
+	\input{tables/tt1banalysis.tex}
+\end{frame}
+
+\section{Selections}
+\begin{frame}{Selections}
+
+	\begin{multicols}{2}
+		Muons
+		\begin{itemize}
+			\item $\pT>\SI{25}{\giga\electronvolt}$
+			\item $\abs{\eta}<2.4$
+			\item \code[10]{CutBasedIdTight}\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideMuonIdRun2}}
+			\item \code[10]{PFIsoLoose}
+			% \item [\vspace{\fill}]
+		\end{itemize}
+		\vfill\null
+		\columnbreak
+		Electrons
+		\begin{itemize}
+			\item $\pT>\SI{25}{\giga\electronvolt}$
+			\item $\abs{\eta}<2.4$
+			\item Exclude barrel-endcap transition $1.4442<\abs{\eta}<1.5660$
+			\item \code[10]{CutBasedIdTight}\footnote{\url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/CutBasedElectronIdentificationRun2}}
+		\end{itemize}	
+	\end{multicols}
+
+\end{frame}
+
+\begin{frame}{Selections}
+	\begin{multicols}{2}
+		Jets
+		\begin{itemize}
+			\item AK4 jets
+			\item $\pT>\SI{30}{\giga\electronvolt}$
+			\item $\abs{\eta}<2.4$
+			\item \code[10]{TightLepVeto} jetId\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMS/JetID13TeVRun2018}}
+			\item Exclude jets with $\Delta R_{j\lepton}<0.4$
+		\end{itemize}
+		\vfill\null
+		\columnbreak
+		\bottomquark jets
+		\begin{itemize}
+			\item DeepJet medium WP
+		\end{itemize}	
+	\end{multicols}	
+\end{frame}
+
+\begin{frame}{Selections}
+	\begin{multicols}{2}
+		Lepton pair
+		\begin{itemize}
+			\item 2 fully selected OC leptons
+			\item $m_{\lepton\lepton}>\SI{12}{\giga\electronvolt}$
+			\item Same lepton flavour exclude $\SI{76}{\giga\electronvolt}<m_{\lepton\lepton}<\SI{106}{\giga\electronvolt}$
+		\end{itemize}
+		\vfill\null
+		\columnbreak
+		MET
+		\begin{itemize}
+			\item Same lepton flavour $\abs{\met}>\SI{30}{\giga\electronvolt}$
+		\end{itemize}	
+	\end{multicols}	
+\end{frame}
+
+\begin{frame}{MET filter flags\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMS/MissingETOptionalFiltersRun2}}}
+	\input{tables/METFilterFlags.tex}
+\end{frame}
+
+
+
+%%% BACKUP
+
+
+% \beginbackup
+% \input{backup.tex}
+% \backupend
+%% PUT BACKUP SLIDES HERE
+%
+%%%%
+%
+
+\end{document}
+
+
+
+
+

@@ -1,0 +1,513 @@
+%% -------------------------------
+%% |        Declarations         |
+%% -------------------------------
+%\DeclareGraphicsExtensions{.svg}
+
+\newcommand{\code}[2][\normalsize]{{\fontfamily{pcr}\fontsize{#1}{#1}\selectfont #2}}
+% jet tag regions
+
+\newcommand{\geFourJgeThreeT}{\ensuremath{\geq 4}\text{j, }\ensuremath{\geq 3}\text{t}\xspace}
+\newcommand{\geFourJThreeT}{\ensuremath{\geq 4}\text{j, }\ensuremath{3}\text{t}\xspace}
+\newcommand{\geFourJgeFourT}{\ensuremath{\geq 4}\text{j, }\ensuremath{\geq 4}\text{t}\xspace}
+
+\newcommand{\leFiveJgeThreeT}{\ensuremath{(4+5)}\text{j, }\ensuremath{\geq 3}\text{t}\xspace}
+\newcommand{\leFiveJThreeT}{\ensuremath{(4+5)}\text{j, }\ensuremath{3}\text{t}\xspace}
+\newcommand{\leFiveJgeFourT}{\ensuremath{(4+5)}\text{j, }\ensuremath{\geq 4}\text{t}\xspace}
+\newcommand{\geSixJgeThreeT}{\ensuremath{\geq 6}\text{j, }\ensuremath{\geq 3}\text{t}\xspace}
+
+\newcommand{\inclusive}{\textbf{inclusive}\xspace}
+\newcommand{\inclusiveTagSplit}{\textbf{inclusive, split tags}\xspace}
+\newcommand{\combinedCR}{\textbf{combined CRs}\xspace}
+\newcommand{\combinedCRTagSplit}{\textbf{combined CRs, split tags}\xspace}
+
+\newcommand{\alertplus}{\ensuremath{\textcolor{red}{\oplus}}}
+\newcommand{\geFourCombined}{\ensuremath{\geFourJThreeT\,\alertplus\geFourJgeFourT}}
+\newcommand{\leFiveCombined}{\ensuremath{\leFiveJThreeT\,\alertplus\leFiveJgeFourT}}
+
+%general constants
+\newcommand{\xs}{\ensuremath{\sigma}\xspace} %parameter for cross-section
+\newcommand{\relvelocity}{\ensuremath{\beta}\xspace} %relative velocity
+\newcommand{\fermiconst}{\ensuremath{G_\text{F}}\xspace} %fermi constant
+\newcommand{\momentumNOSPACE}{\ensuremath{p}}
+\newcommand{\momentum}{\momentumNOSPACE\xspace}
+\newcommand{\pT}{\ensuremath{\momentumNOSPACE_{\text{T}}}\xspace}
+\newcommand{\ptvec}{\ensuremath{\vec{\momentum}_\text{T}}\xspace}
+\newcommand{\chargeNOSPACE}{\ensuremath{q}}
+\newcommand{\charge}{\chargeNOSPACE\xspace}
+\newcommand{\HT}{\ensuremath{\text{H}_\text{T}}\xspace}
+\newcommand{\distance}{\ensuremath{r}\xspace}
+\newcommand{\rapidity}{\ensuremath{y}\xspace}
+\newcommand{\pseudorap}{\ensuremath{\eta}\xspace}
+\newcommand{\azimutangle}{\ensuremath{\phi}\xspace}
+\newcommand{\polarangle}{\ensuremath{\theta}\xspace}
+\newcommand{\met}{\ensuremath{\vec {\not\mathrel{E}}_{\text{T}}}\xspace}
+\newcommand{\eTNOSPACE}{\ensuremath{E_\text{T}}}
+\newcommand{\eT}{\eTNOSPACE\xspace}
+\newcommand{\decay}{\ensuremath{\Gamma}\xspace}
+\newcommand{\intlumi}{\ensuremath{L_\text{int}}\xspace}
+\newcommand{\instlumi}{\ensuremath{L_\text{inst}}\xspace}
+\newcommand{\instlumidef}{instantaneous luminosity~\instlumi}
+\newcommand{\centerofmass}{\ensuremath{\sqrt{s}}\xspace}
+\newcommand{\radiationlength}{\ensuremath{X_0}\xspace}
+\newcommand{\interactionlength}{\ensuremath{\lambda_\text{int}}\xspace}
+\newcommand{\weakisospinzNOSPACE}{\ensuremath{I_Z}}
+\newcommand{\weakisospinz}{\weakisospinzNOSPACE\xspace}
+\newcommand{\strongcoupling}{\ensuremath{\alpha_\text{s}}\xspace}
+\newcommand{\emcoupling}{\ensuremath{\alpha}\xspace}
+\newcommand{\ckm}{\text{CKM}\xspace}
+\newcommand{\weinbergangleNOSPACE}{\ensuremath{\theta_W}}
+\newcommand{\weinbergangle}{\weinbergangleNOSPACE\xspace}
+\newcommand{\lifetime}{\ensuremath{\tau}\xspace}
+\newcommand{\factorizationscale}{\ensuremath{\mu_F^2}\xspace}
+
+\newcommand{\branchratio}{\text{B}\xspace}
+\newcommand{\branchratiodef}{branching ratio~(\branchratio)\xspace}
+\newcommand{\branchratios}{\text{BRs}\xspace}
+\newcommand{\branchratiosdef}{branching ratios~(\branchratios)\xspace}
+\newcommand{\partondensityfunc}{\text{PDF}\xspace}
+\newcommand{\partondensityfuncdef}{parton distribution function~(\partondensityfunc)\xspace}
+\newcommand{\partondensityfuncs}{\text{PDFs}\xspace}
+\newcommand{\partondensityfuncsdef}{parton distribution functions~(\partondensityfuncs)\xspace}
+\newcommand{\probdensityfunc}{\text{p.d.f.}\xspace}
+\newcommand{\probdensityfuncdef}{probability density function~(\probdensityfunc)\xspace}
+\newcommand{\probdensityfuncs}{\text{p.d.f.s}\xspace}
+\newcommand{\probdensityfuncsdef}{probability density functions~(\probdensityfuncs)\xspace}
+\newcommand{\partonshower}{\text{PS}\xspace}
+\newcommand{\partonshowerdef}{parton shower~(\partonshower)\xspace}
+\newcommand{\isr}{\text{ISR}\xspace}
+\newcommand{\isrdef}{initial-state radiation (\isr)\xspace}
+\newcommand{\fsr}{\text{FSR}\xspace}
+\newcommand{\fsrdef}{final-state radiation (\fsr)\xspace}
+\newcommand{\isrfsrdef}{initial-state (\isr) and final-state radiation (\fsr)\xspace}
+\newcommand{\jes}{\text{JES}\xspace}
+\newcommand{\jesdef}{jet energy scale (\jes)\xspace}
+
+
+% gauge theories
+\newcommand{\standardmodelNOSPACE}{\text{SM}}
+\newcommand{\standardmodel}{\standardmodelNOSPACE\xspace}
+\newcommand{\standardmodeldef}{Standard Model~(\standardmodel)\xspace}
+\newcommand{\bsmNOSPACE}{\text{BSM}}
+\newcommand{\bsm}{\bsmNOSPACE\xspace}
+\newcommand{\QED}{\text{QED}\xspace}
+\newcommand{\QEDdef}{quantum electro dynamics~(\QED)\xspace}
+\newcommand{\qcd}{\text{QCD}\xspace}
+\newcommand{\qcddef}{quantum chromo dynamics~(\qcd)\xspace}
+\newcommand{\electroweak}{\text{EW}\xspace}
+\newcommand{\electroweakdef}{electroweak~(\electroweak)\xspace}
+
+
+% arrows
+\newcommand{\rar}{\ensuremath{\rightarrow}\xspace}
+\newcommand{\Rar}{\ensuremath{\Rightarrow}\xspace}
+
+%particles
+
+%fermion definitions
+\newcommand{\fermion}{\text{f}\xspace}
+\newcommand{\fermionNOSPACE}{\text{f}}
+\newcommand{\fermionbarNOSPACE}{\ensuremath{\bar{\fermionNOSPACE}}}
+\newcommand{\fermionbar}{\fermionbarNOSPACE\xspace}
+\newcommand{\fermipair}{\fermionNOSPACE\fermionbar}
+\newcommand{\fermimass}{\ensuremath{m_\fermionNOSPACE}\xspace}
+\newcommand{\fermivelo}{\ensuremath{\relvelocity_\fermionNOSPACE}\xspace}
+\newcommand{\fermidecay}{\ensuremath{\decay_\fermionNOSPACE}\xspace}
+
+
+
+%leptions
+\newcommand{\lepton}{\ensuremath{l}\xspace}
+\newcommand{\leptonNOSPACE}{\ensuremath{l}}
+\newcommand{\leptonbar}{\ensuremath{\overline{\leptonNOSPACE}}\xspace}
+\newcommand{\leptonbarNOSPACE}{\ensuremath{\overline{\leptonNOSPACE}}}
+
+\newcommand{\electron}{\text{e}\xspace}
+\newcommand{\electronNOSPACE}{\text{e}}
+
+\newcommand{\muon}{\ensuremath{\upmu}\xspace}
+\newcommand{\muonNOSPACE}{\ensuremath{\upmu}}
+
+\newcommand{\tauon}{\ensuremath{\uptau}\xspace}
+\newcommand{\tauonNOSPACE}{\ensuremath{\uptau}}
+
+\newcommand{\neutrinoNOSPACE}{\ensuremath{\upnu}}
+\newcommand{\neutrino}{\neutrinoNOSPACE\xspace}
+\newcommand{\neutrinoelNOSPACE}{\ensuremath{\neutrinoNOSPACE_\electronNOSPACE}}
+\newcommand{\neutrinoel}{\neutrinoelNOSPACE\xspace}
+\newcommand{\neutrinomuNOSPACE}{\ensuremath{\neutrinoNOSPACE_\muonNOSPACE}}
+\newcommand{\neutrinomu}{\neutrinomuNOSPACE\xspace}
+\newcommand{\neutrinotauNOSPACE}{\ensuremath{\neutrinoNOSPACE_\tauonNOSPACE}}
+\newcommand{\neutrinotau}{\neutrinotauNOSPACE\xspace}
+
+%bosons
+\newcommand{\vectorbosonNOSPACE}{\text{V}}
+\newcommand{\vectorboson}{\vectorbosonNOSPACE\xspace}
+\newcommand{\vectorbosontext}{vector boson\xspace}
+\newcommand{\vectordecay}{\ensuremath{\decay_\vectorbosonNOSPACE}\xspace}
+\newcommand{\vectorvelo}{\ensuremath{\relvelocity_\vectorbosonNOSPACE}\xspace}
+
+\newcommand{\gluonNOSPACE}{\text{g}}
+\newcommand{\gluon}{\gluonNOSPACE\xspace}
+\newcommand{\gluongluon}{\gluonNOSPACE\gluon}
+
+\newcommand{\photonNOSPACE}{\ensuremath{\gamma}}
+\newcommand{\photon}{\photonNOSPACE\xspace}
+\newcommand{\photontext}{photon\xspace}
+\newcommand{\virtphoton}{\ensuremath{\photonNOSPACE^*}\xspace}
+\newcommand{\virtphotonNOSPACE}{\ensuremath{\photonNOSPACE^*}}
+\newcommand{\wbosonNOSPACE}{\text{W}}
+\newcommand{\wboson}{\wbosonNOSPACE\xspace}
+\newcommand{\wmass}{\ensuremath{m_\wboson}\xspace}
+
+\newcommand{\wbosontext}{\wboson-boson\xspace}
+\newcommand{\wbosonstext}{\wboson-bosons\xspace}
+\newcommand{\bbosonNOSPACE}{\text{B}}
+\newcommand{\bboson}{\bbosonNOSPACE\xspace}
+
+
+\newcommand{\zbosonNOSPACE}{\text{Z}}
+\newcommand{\zboson}{\zbosonNOSPACE\xspace}
+\newcommand{\zbosontext}{\zboson-boson\xspace}
+\newcommand{\zbosonstext}{\zboson-bosons\xspace}
+\newcommand{\zmass}{\ensuremath{m_\zboson}\xspace}
+
+\newcommand{\higgsNOSPACE}{\text{H}}
+\newcommand{\higgs}{\higgsNOSPACE\xspace}
+\newcommand{\higgstext}{Higgs boson\xspace}
+\newcommand{\higgsstext}{Higgs bosons\xspace}
+
+\newcommand{\higgsmass}{\ensuremath{m_\higgs}\xspace}
+\newcommand{\higgsvacval}{\ensuremath{v}\xspace}
+\newcommand{\weakcharge}{\ensuremath{g}\xspace}
+\newcommand{\hypercharge}{\ensuremath{g^\prime}\xspace}
+
+
+%quarks
+\newcommand{\quark}{\ensuremath{q}\xspace}
+\newcommand{\quarkNOSPACE}{\ensuremath{q}}
+\newcommand{\quarkbarNOSPACE}{\ensuremath{\bar{\quarkNOSPACE}}}
+\newcommand{\quarkbar}{\quarkbarNOSPACE\xspace}
+
+\newcommand{\topquark}{\text{t}\xspace}
+\newcommand{\topquarkNOSPACE}{\text{t}}
+\newcommand{\tbar}{\ensuremath{\overline{\topquarkNOSPACE}}\xspace}
+\newcommand{\tbarNOSPACE}{\ensuremath{\overline{\topquarkNOSPACE}}}
+\newcommand{\topquarktext}{top quark\xspace}
+\newcommand{\topquarkstext}{top quarks\xspace}
+
+\newcommand{\bottomquark}{\text{b}\xspace}
+\newcommand{\bottomquarkNOSPACE}{\text{b}}
+\newcommand{\bbar}{\ensuremath{\overline{\bottomquarkNOSPACE}}\xspace}
+\newcommand{\bbarNOSPACE}{\ensuremath{\overline{\bottomquarkNOSPACE}}}
+\newcommand{\bottomquarktext}{bottom quark\xspace}
+\newcommand{\bottomquarkstext}{bottom quarks\xspace}
+
+\newcommand{\charmquark}{\text{c}\xspace}
+\newcommand{\charmquarkNOSPACE}{\text{c}}
+\newcommand{\cbar}{\ensuremath{\overline{\charmquarkNOSPACE}}\xspace}
+\newcommand{\cbarNOSPACE}{\ensuremath{\overline{\charmquarkNOSPACE}}}
+\newcommand{\charmquarktext}{charm quark\xspace}
+\newcommand{\charmquarkstext}{charm quarks\xspace}
+
+\newcommand{\strangequark}{\text{s}\xspace}
+\newcommand{\strangequarkNOSPACE}{\text{s}}
+\newcommand{\sbar}{\ensuremath{\overline{\strangequarkNOSPACE}}\xspace}
+\newcommand{\sbarNOSPACE}{\ensuremath{\overline{\strangequarkNOSPACE}}}
+\newcommand{\strangequarktext}{strange quark\xspace}
+\newcommand{\strangequarkstext}{strange quarks\xspace}
+
+\newcommand{\upquark}{\text{u}\xspace}
+\newcommand{\upquarkNOSPACE}{\text{u}}
+\newcommand{\upbar}{\ensuremath{\overline{\upquarkNOSPACE}}\xspace}
+\newcommand{\upbarNOSPACE}{\ensuremath{\overline{\upquarkNOSPACE}}}
+\newcommand{\upquarktext}{up quark\xspace}
+\newcommand{\upquarkstext}{up quarks\xspace}
+
+\newcommand{\downquark}{\text{d}\xspace}
+\newcommand{\downquarkNOSPACE}{\text{d}}
+\newcommand{\dbar}{\ensuremath{\overline{\downquarkNOSPACE}}\xspace}
+\newcommand{\dbarNOSPACE}{\ensuremath{\overline{\downquarkNOSPACE}}}
+\newcommand{\downquarktext}{down quark\xspace}
+\newcommand{\downquarkstext}{down quarks\xspace}
+
+%hadrons
+\newcommand{\pion}{\ensuremath{\uppi}\xspace}
+\newcommand{\pionNOSPACE}{\ensuremath{\uppi}}
+\newcommand{\bhadron}{\ensuremath{\mathcal{B}}\xspace}
+
+\newcommand{\protonNOSPACE}{\text{p}\xspace}
+\newcommand{\proton}{\protonNOSPACE\xspace}
+\newcommand{\protonproton}{\protonNOSPACE\proton}
+\newcommand{\partonNOSPACE}{\ensuremath{\hat{\protonNOSPACE}}}
+\newcommand{\parton}{\partonNOSPACE\xspace}
+% particle physics processes
+
+
+\newcommand{\ttbar}{\ensuremath{\topquarkNOSPACE\tbarNOSPACE}\xspace }
+\newcommand{\ttbarNOSPACE}{\ensuremath{\topquarkNOSPACE\tbarNOSPACE}}
+\newcommand{\ttjets}{\ensuremath{\ttbar + \text{jets}}\xspace}
+\newcommand{\ttbarH}{\ensuremath{\ttbarNOSPACE\higgsNOSPACE}\xspace }
+\newcommand{\ttTwob}{\ensuremath{\ttbarNOSPACE + 2\bottomquarkNOSPACE}\xspace}
+\newcommand{\ttb}{\ensuremath{\ttbarNOSPACE + \bottomquarkNOSPACE}\xspace}
+\newcommand{\tHNOSPACE}{\ensuremath{\topquarkNOSPACE\higgsNOSPACE}}
+\newcommand{\tH}{\tHNOSPACE\xspace}
+\newcommand{\ttH}{\ttbarH}
+\newcommand{\ttHbb}{\ensuremath{\ttH(\bottomquarkNOSPACE\bbarNOSPACE)}\xspace}
+\newcommand{\bbbar}{\bottomquarkNOSPACE\bbar}
+\newcommand{\bbbarNOSPACE}{\bottomquarkNOSPACE\bbarNOSPACE}
+\newcommand{\ttbb}{\ensuremath{\ttbarNOSPACE+\bbbar}\xspace}
+\newcommand{\ttbbNOPLUS}{\ttbarNOSPACE\bbbar}
+\newcommand{\ccbar}{\charmquarkNOSPACE\cbar}
+\newcommand{\ttcc}{\ensuremath{\ttbarNOSPACE + \ccbar}\xspace}
+
+\newcommand{\Htobb}{\ensuremath{\higgsNOSPACE\to \bbbar}\xspace}
+\newcommand{\Htononbb}{\ensuremath{\higgsNOSPACE\to \text{ non} \bbbar}}
+\newcommand{\heavyflav}{\text{HF}\xspace}
+\newcommand{\heavyflavdef}{heavy flavor~(\heavyflav)\xspace}
+\newcommand{\lightflav}{\text{LF}\xspace}
+\newcommand{\lightflavdef}{light flavor~(\lightflav)\xspace}
+\newcommand{\tthf}{\ensuremath{\ttbarNOSPACE + \text{heavy flavor}}\xspace}
+\newcommand{\ttlf}{\ensuremath{\ttbarNOSPACE + \text{light flavor}}\xspace}
+\newcommand{\ttHF}{\ensuremath{\ttbarNOSPACE + \heavyflav}\xspace}
+\newcommand{\ttX}{\ensuremath{\ttbarNOSPACE + \text{X}}\xspace}
+\newcommand{\wjets}{\ensuremath{\wboson + \text{jets}}\xspace}
+\newcommand{\zjets}{\ensuremath{\zboson + \text{jets}}\xspace}
+\newcommand{\vjets}{\ensuremath{\vectorboson + \text{jets}}\xspace}
+\newcommand{\singlet}{\text{single \topquark}\xspace}
+\newcommand{\singletbar}{\text{single \tbar}\xspace}
+\newcommand{\ttW}{\ensuremath{\ttbarNOSPACE + \wboson}\xspace}
+\newcommand{\ttZ}{\ensuremath{\ttbarNOSPACE + \zboson}\xspace}
+\newcommand{\ttV}{\ensuremath{\ttbarNOSPACE + \vectorboson}\xspace}
+
+
+%detector related
+\newcommand{\cmsNOSPACE}{\text{CMS}}
+\newcommand{\cms}{\cmsNOSPACE\xspace}
+\newcommand{\cmsdef}{Compact Muon Solenoid~(\cms)\xspace}
+\newcommand{\atlasNOSPACE}{\text{ATLAS}}
+\newcommand{\atlas}{\atlasNOSPACE\xspace}
+\newcommand{\aliceNOSPACE}{\text{ALICE}}
+\newcommand{\alice}{\aliceNOSPACE\xspace}
+\newcommand{\lhcbNOSPACE}{\text{LHCb}}
+\newcommand{\lhcb}{\lhcbNOSPACE\xspace}
+
+\newcommand{\lhcNOSPACE}{\text{LHC}}
+\newcommand{\lhc}{\lhcNOSPACE\xspace}
+\newcommand{\lhcdef}{Large Hadron Collider~(\lhc)\xspace}
+\newcommand{\cernNOSPACE}{\text{CERN}}
+\newcommand{\cern}{\cernNOSPACE\xspace}
+\newcommand{\cerndef}{European Organization for Nuclear Research~(\cern)\xspace}
+\newcommand{\linac}{\text{LINAC}\xspace}
+\newcommand{\linacdef}{Linear Accelerator~(\linac)\xspace}
+\newcommand{\pbsaccel}{\text{PBS}\xspace}
+\newcommand{\pbsacceldef}{Proton Synchrotron Booster~(\pbsaccel)\xspace}
+\newcommand{\psaccel}{\text{PS}\xspace}
+\newcommand{\psacceldef}{Proton Synchrotron~(\psaccel)\xspace}
+\newcommand{\spsaccel}{\text{SPS}\xspace}
+\newcommand{\spsacceldef}{Super Proton Synchrotron~(\spsaccel)\xspace}
+
+\newcommand{\csv}{\text{CSVv2}\xspace}
+\newcommand{\csvdef}{combined secondary vertex~(\csv)\xspace}
+\newcommand{\btag}{\text{\bottomquark-tag}\xspace}
+\newcommand{\mbtag}{m-\btag\xspace}
+\newcommand{\btagNOSPACE}{\text{\bottomquark-tag}}
+\newcommand{\btagging}{\text{\bottomquark-tagging}\xspace}
+\newcommand{\btagsNOSPACE}{\text{\bottomquark-tags}}
+\newcommand{\btags}{\btagsNOSPACE\xspace}
+\newcommand{\btagged}{\text{\bottomquark-tagged}\xspace}
+\newcommand{\bjet}{\bottomquark-jet\xspace}
+\newcommand{\bjets}{\bottomquark-jets\xspace}
+\newcommand{\scalefactor}{\text{SF}\xspace}
+\newcommand{\scalefactordef}{scale factor~(\scalefactor)\xspace}
+\newcommand{\particleflowNOSPACE}{\text{PF}}
+\newcommand{\particleflow}{\particleflowNOSPACE\xspace}
+\newcommand{\particleflowdef}{particle-flow~(\particleflow)\xspace}
+
+\newcommand{\ecalNOSPACE}{\text{ECAL}}
+\newcommand{\ecal}{\ecalNOSPACE\xspace}
+\newcommand{\hcalNOSPACE}{\text{HCAL}}
+\newcommand{\hcal}{\hcalNOSPACE\xspace}
+
+
+\newcommand{\coneradNOSPACE}{\ensuremath{\Delta R}}
+\newcommand{\conerad}{\coneradNOSPACE\xspace}
+\newcommand{\relisoNOSPACE}{\ensuremath{I_\text{rel}}}
+\newcommand{\reliso}{\relisoNOSPACE\xspace}
+\newcommand{\relisoelectron}{\ensuremath{\reliso^{\electron}}\xspace}
+\newcommand{\relisomuon}{\ensuremath{\reliso^{\muon}}\xspace}
+\newcommand{\fastjet}{\textsc{FastJet}\xspace}
+\newcommand{\akfour}{ak4\xspace }
+\newcommand{\akeight}{ak8\xspace }
+\newcommand{\kt}{\ensuremath{k_{\text{T}}}\xspace }
+\newcommand{\pu}{pileup\xspace }
+\newcommand{\Pu}{Pileup\xspace}
+\newcommand{\ue}{underlying event\xspace }
+
+%machine learning related
+\newcommand{\mva}{\text{MVA}\xspace}
+\newcommand{\mvadef}{multivariate analysis~(\mva) method\xspace}
+\newcommand{\mvas}{\mva methods\xspace}
+\newcommand{\mvasdef}{multivariate analysis~(\mva) methods\xspace}
+\newcommand{\leadingorder}{\text{LO}\xspace}
+\newcommand{\leadingorderdef}{leading-order~(\leadingorder)\xspace}
+\newcommand{\leadingordersubjectdef}{leading order~(\leadingorder)\xspace}
+\newcommand{\nexttoleading}{\text{NLO}\xspace}
+\newcommand{\nexttoleadingdef}{next-to-leading-order~(\nexttoleading)\xspace}
+\newcommand{\nexttoleadingsubjectdef}{next-to-leading order~(\nexttoleading)\xspace}
+\newcommand{\nnleading}{\text{NNLO}\xspace}
+\newcommand{\nnleadingdef}{next-to-next-to-leading-order~(\nnleading)\xspace}
+\newcommand{\nnleadingsubjectdef}{next-to-next-to-leading order~(\nnleading)\xspace}
+
+\newcommand{\nnleadinglog}{\text{NNLL}\xspace}
+\newcommand{\nnleadinglogdef}{next-to-next-to-leading-logarithmic~(NNLL)\xspace}
+\newcommand{\nnleadinglogsubjectdef}{next-to-next-to-leading logarithmic~(NNLL)\xspace}
+
+\newcommand{\leadinglog}{\text{LL}\xspace}
+\newcommand{\leadinglogdef}{leading-logarithmic~(\leadinglog)\xspace}
+\newcommand{\leadinglogsubjectdef}{leading logarithmic~(\leadinglog)\xspace}
+
+\newcommand{\bdtNOSPACE}{\text{BDT}}
+\newcommand{\bdt}{\bdtNOSPACE\xspace}
+\newcommand{\bdtdef}{Boosted Decision Tree~(\bdt)\xspace}
+\newcommand{\bdts}{\text{BDTs}\xspace}
+\newcommand{\bdtsdef}{Boosted Decision Trees~(\bdts)\xspace}
+\newcommand{\dnn}{\text{DNN}\xspace}
+\newcommand{\dnndef}{Deep Neural Network~(\dnn)\xspace}
+\newcommand{\tmva}{\text{TMVA}\xspace}
+\newcommand{\tmvadef}{\enquote{Toolkit for Multivariate Data Analysis with \cernrootNOSPACE}~(\tmva)\xspace}
+\newcommand{\finaldiscr}{\ensuremath{f_\text{final}}\xspace}
+\newcommand{\mem}{\text{MEM}\xspace}
+\newcommand{\memdef}{Matrix Element Method~(\mem)\xspace}
+\newcommand{\bdtmem}{\text{\bdtNOSPACE+\mem}\xspace}
+
+%MC generator related
+\newcommand{\montecarlo}{\text{MC}\xspace}
+\newcommand{\montecarlodef}{\text{Monte Carlo~(\montecarlo)}\xspace}
+\newcommand{\madgraphamcatnlo}{\textsc{MadGraph5\_aMC@NLO}\xspace}
+\newcommand{\madgraphamcatnloshort}{\textsc{MG5aMC}\xspace}
+\newcommand{\madgraphlo}{\textsc{MadGraph5}\xspace}
+\newcommand{\powhegNOSPACE}{\textsc{Powheg}}
+\newcommand{\powheg}{\powhegNOSPACE\xspace}
+\newcommand{\openloops}{\textsc{OpenLoops}\xspace}
+\newcommand{\sherpaNOSPACE}{\textsc{Sherpa}}
+\newcommand{\sherpa}{\sherpaNOSPACE\xspace}
+\newcommand{\sherpaol}{\sherpaNOSPACE+\openloops}
+\newcommand{\pythia}{\textsc{Pythia~8.2}\xspace}
+\newcommand{\powhegpythia}{\powhegNOSPACE+\pythia}
+\newcommand{\pythiaTunettH}{\textsc{CUETP8M2T4}\xspace}
+\newcommand{\pythiaTunebkg}{\textsc{CUETP8M1}\xspace}
+\newcommand{\herwig}{\textsc{Herwig~7}\xspace}
+\newcommand{\herwigpp}{\textsc{Herwig++}\xspace}
+\newcommand{\nnpdf}{\textsc{NNPDF3.0}\xspace}
+\newcommand{\nnpdfcollab}{\textsc{NNPDF}\xspace}
+\newcommand{\genevent}{\ensuremath{N_\text{gen}}\xspace}
+\newcommand{\fxfx}{\text{FxFx}\xspace}
+\newcommand{\geant}{\textsc{Geant4}\xspace}
+
+\newcommand{\matrixelement}{\text{ME}\xspace}
+\newcommand{\matrixelementdef}{\text{matrix element~(\matrixelement)}\xspace}
+\newcommand{\matrixelements}{\text{MEs}\xspace}
+\newcommand{\matrixelementsdef}{\text{matrix elements~(\matrixelements)}\xspace}
+
+%categories
+\newcommand{\njets}{\text{n-jets}\xspace}
+\newcommand{\FourJetTwoBtagNOSPACE}{4 jets, 2 \btagsNOSPACE}
+\newcommand{\FourJetTwoBtag}{\FourJetTwoBtagNOSPACE\xspace}
+\newcommand{\FourJetTwoBtagdef}{four jets and two \btags~(\FourJetTwoBtagNOSPACE)\xspace}
+\newcommand{\FourJetThreeBtagNOSPACE}{4 jets, 3 \btagsNOSPACE}
+\newcommand{\FourJetThreeBtag}{\FourJetThreeBtagNOSPACE\xspace}
+\newcommand{\FourJetThreeBtagdef}{four jets and three \btags~(\FourJetThreeBtagNOSPACE)\xspace}
+\newcommand{\FourJetFourBtagNOSPACE}{4 jets, 4 \btagsNOSPACE}
+\newcommand{\FourJetFourBtag}{\FourJetFourBtagNOSPACE\xspace}
+\newcommand{\FourJetFourBtagdef}{four jets and four \btags~(\FourJetFourBtagNOSPACE)\xspace}
+\newcommand{\FiveJetTwoBtagNOSPACE}{5 jets, 2 \btagsNOSPACE}
+\newcommand{\FiveJetTwoBtag}{\FiveJetTwoBtagNOSPACE\xspace}
+\newcommand{\FiveJetTwoBtagdef}{five jets and two \btags~(\FiveJetTwoBtagNOSPACE)\xspace}
+\newcommand{\FiveJetThreeBtagNOSPACE}{5 jets, 3 \btagsNOSPACE}
+\newcommand{\FiveJetThreeBtag}{\FiveJetThreeBtagNOSPACE\xspace}
+\newcommand{\FiveJetThreeBtagdef}{five jets and three \btags~(\FiveJetThreeBtagNOSPACE)\xspace}
+\newcommand{\FiveJetFourBtagNOSPACE}{5 jets, \ensuremath{\geq 4} \btagsNOSPACE}
+\newcommand{\FiveJetFourBtag}{\FiveJetFourBtagNOSPACE\xspace}
+\newcommand{\FiveJetFourBtagdef}{five jets and at least four \btags~(\FiveJetFourBtagNOSPACE)\xspace}
+\newcommand{\SixJetTwoBtagNOSPACE}{\ensuremath{\geq 6} jets, 2 \btagsNOSPACE}
+\newcommand{\SixJetTwoBtag}{\SixJetTwoBtagNOSPACE\xspace}
+\newcommand{\SixJetTwoBtagdef}{at least six jets and exactly two \btags~(\SixJetTwoBtagNOSPACE)\xspace}
+\newcommand{\SixJetThreeBtagNOSPACE}{\ensuremath{\geq 6} jets, 3 \btagsNOSPACE}
+\newcommand{\SixJetThreeBtag}{\SixJetThreeBtagNOSPACE\xspace}
+\newcommand{\SixJetThreeBtagdef}{at least six jets and exactly three \btags~(\SixJetThreeBtagNOSPACE)\xspace}
+\newcommand{\SixJetFourBtagNOSPACE}{\ensuremath{\geq 6} jets, \ensuremath{\geq 4} \btagsNOSPACE}
+\newcommand{\SixJetFourBtag}{\SixJetFourBtagNOSPACE\xspace}
+\newcommand{\SixJetFourBtagdef}{at least six jets and at least four \btags~(\SixJetFourBtagNOSPACE)\xspace}
+
+%tools
+\newcommand{\combine}{\texttt{combine}\xspace}
+\newcommand{\cernrootNOSPACE}{\text{ROOT}}
+\newcommand{\cernroot}{\cernrootNOSPACE\xspace}
+
+
+%statistics
+\newcommand{\poi}{\ensuremath{\mu}\xspace}
+\newcommand{\pois}{\ensemble{\poi}\xspace}
+\newcommand{\maxpoi}{\maximum{\poi}\xspace}
+\newcommand{\maxpois}{\ensemble{\maxpoi}\xspace}
+\newcommand{\poitext}{\text{POI}\xspace}
+\newcommand{\poistext}{\text{POIs}\xspace}
+\newcommand{\poistextdef}{parameters of interest~(\poistext)\xspace}
+\newcommand{\poitextdef}{parameter of interest~(\poitext)\xspace}
+\newcommand{\maxlikelihood}{\text{ML}\xspace}
+\newcommand{\maxlikelihooddef}{Maximum Likelihood~(\maxlikelihood)\xspace}
+\newcommand{\likelihood}{\ensuremath{\mathcal{L}}\xspace}
+\newcommand{\teststat}{\ensuremath{\tilde{q}}\xspace}
+\newcommand{\nll}{negative log-likelihood\xspace}
+\newcommand{\nllBEGINNING}{Negative log-likelihood\xspace}
+\newcommand{\probability}{\ensuremath{\mathcal{P}}\xspace}
+\newcommand{\expectation}{\ensuremath{\lambda}\xspace}
+\newcommand{\muttH}{\ensuremath{\poi_{\ttbarH}}\xspace}
+\newcommand{\maxmuttH}{\ensuremath{\maximum{\poi}_{\ttbarH}}\xspace}
+\newcommand{\muttbb}{\ensuremath{\poi_{\ttbbNOPLUS}}\xspace}
+\newcommand{\muttBbb}{\ensuremath{\poi_{\ttbbNOPLUS\text{/b}}}\xspace}
+\newcommand{\mutthf}{\ensuremath{\poi_{\ttHF}}}
+\newcommand{\np}{\ensuremath{\theta}\xspace}
+\newcommand{\nptext}{\text{NP}\xspace}
+\newcommand{\nptextdef}{nuisance parameter~(\nptext)\xspace}
+\newcommand{\nps}{\ensemble{\np}\xspace}
+\newcommand{\npstext}{\text{NPs}\xspace}
+\newcommand{\npstextdef}{nuisance parameters~(\npstext)\xspace}
+\newcommand{\maxnp}{\maximum{\np}\xspace}
+\newcommand{\maxnps}{\ensuremath{\ensemble{\maxnp}}\xspace}
+\newcommand{\priornp}{\ensuremath{\tilde{\np}}\xspace}
+\newcommand{\priornps}{\ensuremath{\ensemble{\tilde{\np}}}\xspace}
+\newcommand{\posteriorprob}{\ensuremath{\rho(\np|\priornp)}\xspace}
+\newcommand{\posteriorprobs}{\ensuremath{\rho(\nps|\priornps)}\xspace}
+\newcommand{\prefitprob}{\ensuremath{\text{p}(\priornp|\np)}\xspace}
+\newcommand{\prefitprobs}{\ensuremath{\text{p}(\priornps|\nps)}\xspace}
+\newcommand{\hyperprior}{\ensuremath{\uppi_{\np}(\np)}\xspace}
+\newcommand{\hyperpriors}{\ensuremath{\uppi_{\nps}(\nps)}\xspace}
+\newcommand{\binsum}{\ensuremath{\Sigma(\muttH, i)}\xspace}
+
+
+\newcommand{\constraint}{\ensuremath{\sigma}\xspace}
+\newcommand{\constraintUp}{\ensuremath{\constraint_\text{Up}}\xspace}
+\newcommand{\constraintLow}{\ensuremath{\constraint_\text{Low}}\xspace}
+\newcommand{\standarddev}{\ensuremath{\delta}\xspace}
+\newcommand{\chisquare}{\ensuremath{\chi^2}\xspace}
+\newcommand{\correlation}{\text{corr}}
+\newcommand{\prioruncertainty}{\ensuremath{\kappa}\xspace}
+\newcommand{\bonly}{background-only\xspace}
+\newcommand{\bonlyHEADLINE}{Background-Only\xspace}
+\newcommand{\sbfit}{signal-plus-background\xspace}
+\newcommand{\sbfitHEADLINE}{Signal-Plus-Background\xspace}
+%\newcommand{\pull}{post-fit value in respect to the a-priori predicition\xspace}
+\newcommand{\pulls}{\text{pulls}\xspace}
+\newcommand{\pull}{\text{pull}\xspace}
+\newcommand{\onesigmacl}{\SI[round-precision=2]{68.27}{\percent}\xspace}
+
+\newcommand{\ensemble}[1]{\ensuremath{\vec{#1}}\xspace}
+\newcommand{\maximum}[1]{\ensuremath{\hat{#1}}\xspace}
+\newcommand{\parname}[1]{\texttt{#1}}
+\newcommand{\abs}[1]{\ensuremath{|#1|}}
+\newcommand{\ordersymbol}{\ensuremath{\mathcal{O}}}
+\newcommand{\order}[1]{\ensuremath{\ordersymbol(\num[retain-unity-mantissa = false]{#1})}\xspace}
+
+
+%% --- End of Declarations ---
