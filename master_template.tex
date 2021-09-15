@@ -41,7 +41,7 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 
-
+\usepackage{xcolor}
 \usepackage{chngcntr}
 
 \usepackage{xcolor,colortbl}
@@ -146,9 +146,9 @@
 \begin{frame}{Samples}
     \input{tables/samples.tex}
 \end{frame}
-\section{Triggers}
+\section{Event selection}
 
-\subsection{Single lepton triggers}
+\subsection{Triggers}
 \begin{frame}{Single lepton triggers}
 	\input{tables/singleLepTriggers.tex}
 \end{frame}
@@ -165,7 +165,6 @@
 	\input{tables/lepChannelForSingleLepTriggers.tex}
 \end{frame}
 
-\subsection{Dilepton triggers}
 \begin{frame}{Dilepton triggers as suggested by TOP PAG}
 	\begin{itemize}
 		\item Lowest unprescaled triggers as suggested by TOP PAG\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMS/TopTriggerYear2018}}
@@ -174,7 +173,7 @@
 	\input{tables/dilepTriggerSuggestions.tex}
 \end{frame}
 
-\begin{frame}{Dilepton triggers used in recent TTTo2L2Nu analysis\footnote{\url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/TOP20009}}}
+\begin{frame}{Dilepton triggers used in recent dilepton $\ttbar+>1\bottomquark$ analysis\footnote{\url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/TOP20009}}}
 	\begin{itemize}
 		\item Additional use of single leptron double lepton
 		\item Recovery of double lepton events failing double lepton triggers
@@ -183,7 +182,7 @@
 	\input{tables/tt1banalysis.tex}
 \end{frame}
 
-\section{Selections}
+\subsection{Cuts}
 \begin{frame}{Selections}
 
 	\begin{multicols}{2}
@@ -241,14 +240,57 @@
 		\begin{itemize}
 			\item Same lepton flavour $\abs{\met}>\SI{30}{\giga\electronvolt}$
 		\end{itemize}	
-	\end{multicols}	
+	\end{multicols}
+	Vertex
+	\begin{itemize}
+		\item \code[10]{PV\_npvsGood}\footnote{$ndof>4$, $\abs{\rho}<\SI{2}{\centi\metre}$ and $\abs{z}<\SI{24}{\centi\metre}$}
+	\end{itemize}	
 \end{frame}
 
 \begin{frame}{MET filter flags\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMS/MissingETOptionalFiltersRun2}}}
 	\input{tables/METFilterFlags.tex}
 \end{frame}
 
+\begin{frame}{Scale factors}
+	\begin{itemize}
+		\item Single lepton trigger SFs
+		\item {\color{red}Double lepton trigger SFs}
+		\item Electron ID, tracking SFs
+		\item Muon ID, ISO SFs
+		\item Fixed WP and iterative fit b-tagging SFs
+		\item {\color{red}c-tagging SFs}
+	\end{itemize}
+\end{frame}
 
+\section{Event reconstruction}
+\begin{frame}{Event reconstruction}
+	\begin{itemize}
+		\item Assign jets stemming from \ttbar or from additional jets
+		\item Different approaches
+		\begin{itemize}
+			\item $\chisquare$
+			\item BDT
+			\item NN
+		\end{itemize}
+		\item Possible use of existing jet assignment methods (JAN)
+		\item Truth level jet assignment required between reconstructed jet and generator jet
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Event classification}
+	\begin{itemize}
+		\item Classify events according to flavour content of additional jets
+		\begin{itemize}
+			\item \ttbb
+			\item \ttb
+			\item \ttcc
+			\item \ttc
+			\item \ttlf
+			\item \ttother
+		\end{itemize}
+		\item Different MVA based approaches
+	\end{itemize}
+\end{frame}
 
 %%% BACKUP
 

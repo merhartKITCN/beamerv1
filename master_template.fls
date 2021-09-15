@@ -1,10 +1,10 @@
-PWD /home/merhart/Masterarbeit/kitvorlage
+PWD /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.tex
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.log
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.tex
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -232,7 +232,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonbook.pdf
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.pdf
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonbook.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonbook.20.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonbook.20.pdf
@@ -258,10 +258,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/beamerthemekit.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/beamerthemekit.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/beamerthemekitbase.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/beamerthemekitbase.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/beamerthemekit.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/beamerthemekit.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/beamerthemekitbase.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/beamerthemekitbase.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
@@ -276,8 +276,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/semirounded.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/semirounded.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/semirounded.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/semirounded.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
@@ -286,8 +286,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/beamercolorthemekit.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/templates/beamercolorthemekit.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/beamercolorthemekit.sty
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/templates/beamercolorthemekit.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -375,11 +375,11 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/declarations.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/declarations.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.aux
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.aux
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.aux
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/declarations.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/declarations.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.aux
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.aux
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
@@ -395,13 +395,13 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -418,8 +418,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-binary.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-binary.cfg
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.nav
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.nav
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.nav
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.nav
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
@@ -460,28 +460,28 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt0800.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt0800.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/nologo.png
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/nologo.png
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/nologo.png
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/DCMS_Logo_copy.jpg
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/DCMS_Logo_copy.jpg
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/DCMS_Logo_copy.jpg
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/nologo.png
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/nologo.png
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/nologo.png
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/DCMS_Logo_copy.jpg
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/DCMS_Logo_copy.jpg
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/DCMS_Logo_copy.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/Karlsruher_Schloss_Front_Panorama.jpg
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/Karlsruher_Schloss_Front_Panorama.jpg
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/Karlsruher_Schloss_Front_Panorama.jpg
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/Karlsruher_Schloss_Front_Panorama.jpg
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/Karlsruher_Schloss_Front_Panorama.jpg
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/Karlsruher_Schloss_Front_Panorama.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -493,20 +493,20 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.toc
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.toc
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.toc
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.toc
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/samples.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/samples.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/samples.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/samples.tex
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qcr.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qcr.fd
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qcrr.tfm
@@ -523,37 +523,37 @@ INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qcrr.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8c.vf
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/singleLepTriggers.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/singleLepTriggers.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/singleLepTriggers.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/singleLepTriggers.tex
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qcrr.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/lepChannelForSingleLepTriggers.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/lepChannelForSingleLepTriggers.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/lepChannelForSingleLepTriggers.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/lepChannelForSingleLepTriggers.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
@@ -568,19 +568,19 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/dilepTriggerSuggestions.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/dilepTriggerSuggestions.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/dilepTriggerSuggestions.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/dilepTriggerSuggestions.tex
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qcrr.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/tt1banalysis.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/tt1banalysis.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/tt1banalysis.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/tt1banalysis.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
@@ -607,73 +607,107 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/METFilterFlags.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/tables/METFilterFlags.tex
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb.eps
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
-INPUT /home/merhart/Masterarbeit/kitvorlage/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/METFilterFlags.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/tables/METFilterFlags.tex
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.nav
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.toc
-OUTPUT /home/merhart/Masterarbeit/kitvorlage/master_template.snm
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.aux
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
-INPUT /home/merhart/Masterarbeit/kitvorlage/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb.eps
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/logos/kitlogo_en_rgb-eps-converted-to.pdf
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.nav
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.toc
+OUTPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.snm
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.aux
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
+INPUT /home/merhart/latex templates/latex-templates-master/beamerv1/beamerv1/master_template.out
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qcrr.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb

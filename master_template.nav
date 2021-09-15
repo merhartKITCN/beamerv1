@@ -12,32 +12,38 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\beamer@sectionpages {3}{3}}
 \headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\sectionentry {3}{Triggers}{4}{Triggers}{0}}
+\headcommand {\sectionentry {3}{Event selection}{4}{Event selection}{0}}
 \headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{4}{Single lepton triggers}}
-\headcommand {\slideentry {3}{1}{1}{4/4}{Single lepton triggers}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{4}{Triggers}}
+\headcommand {\slideentry {3}{1}{1}{4/4}{Triggers}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {3}{1}{2}{5/5}{Single lepton triggers}{0}}
+\headcommand {\slideentry {3}{1}{2}{5/5}{Triggers}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{6}{Dilepton triggers}}
-\headcommand {\slideentry {3}{2}{1}{6/6}{Dilepton triggers}{0}}
+\headcommand {\slideentry {3}{1}{3}{6/6}{Triggers}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {3}{2}{2}{7/7}{Dilepton triggers}{0}}
+\headcommand {\slideentry {3}{1}{4}{7/7}{Triggers}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@sectionpages {4}{7}}
-\headcommand {\beamer@subsectionpages {6}{7}}
-\headcommand {\sectionentry {4}{Selections}{8}{Selections}{0}}
-\headcommand {\slideentry {4}{0}{1}{8/8}{}{0}}
+\headcommand {\beamer@subsectionpages {4}{7}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{8}{Cuts}}
+\headcommand {\slideentry {3}{2}{1}{8/8}{Cuts}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {4}{0}{2}{9/9}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{9/9}{Cuts}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {4}{0}{3}{10/10}{}{0}}
+\headcommand {\slideentry {3}{2}{3}{10/10}{Cuts}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {4}{0}{4}{11/11}{}{0}}
+\headcommand {\slideentry {3}{2}{4}{11/11}{Cuts}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@partpages {1}{11}}
-\headcommand {\beamer@subsectionpages {8}{11}}
-\headcommand {\beamer@sectionpages {8}{11}}
-\headcommand {\beamer@documentpages {11}}
-\headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\slideentry {3}{2}{5}{12/12}{Cuts}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {4}{12}}
+\headcommand {\beamer@subsectionpages {8}{12}}
+\headcommand {\sectionentry {4}{Event reconstruction}{13}{Event reconstruction}{0}}
+\headcommand {\slideentry {4}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {4}{0}{2}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@sectionpages {13}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {14}}

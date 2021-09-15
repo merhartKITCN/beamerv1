@@ -2,7 +2,7 @@
 \babel@toc {ngerman}{}
 \babel@toc {english}{}
 \beamer@sectionintoc {2}{Samples}{3}{0}{1}
-\beamer@sectionintoc {3}{Triggers}{4}{0}{2}
-\beamer@subsectionintoc {3}{1}{Single lepton triggers}{4}{0}{2}
-\beamer@subsectionintoc {3}{2}{Dilepton triggers}{6}{0}{2}
-\beamer@sectionintoc {4}{Selections}{8}{0}{3}
+\beamer@sectionintoc {3}{Event selection}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Triggers}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Cuts}{8}{0}{2}
+\beamer@sectionintoc {4}{Event reconstruction}{13}{0}{3}
